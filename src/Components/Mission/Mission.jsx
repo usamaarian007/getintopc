@@ -13,7 +13,7 @@ export default function Mission() {
         className="ml-20 mr-24 mt-4 flex flex-wrap"
         style={{ height: "auto", width: "90vw", backgroundColor: "#FFFFFF" }}
       >
-        <div className="p-4" style={{ width: "60vw" }}>
+        <div className="p-4" style={{ width: "64vw" }}>
           <h1 className="text-4xl font-semibold">Mission</h1>
           <p className="pt-4 text-sm font-light">
             Do you get tired of finding 100% working softwares?

@@ -14,7 +14,7 @@ export default function Report() {
         className="ml-20 mr-24 mt-4 flex flex-wrap"
         style={{ height: "auto", width: "90vw", backgroundColor: "#FFFFFF" }}
       >
-        <div className="p-4" style={{ width: "60vw" }}>
+        <div className="p-4" style={{ width: "64vw" }}>
           <h1 className="text-4xl font-semibold">Report & Abuse</h1>
           <p className="pt-4 text-sm font-light">
             Large number of users upload Software (Official Trial and Demo)

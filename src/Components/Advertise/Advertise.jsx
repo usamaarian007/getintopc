@@ -11,9 +11,9 @@ export default function Advertise() {
       <Navbar></Navbar>
       <div
         className="ml-20 mr-24 mt-4 flex flex-wrap"
-        style={{ height: "auto", width: "auto", backgroundColor: "#FFFFFF" }}
+        style={{ height: "auto", width: "90vw", backgroundColor: "#FFFFFF" }}
       >
-        <div className="p-4" style={{ width: "60vw" }}>
+        <div className="p-4" style={{ width: "64vw" }}>
           <h1 className="text-4xl font-semibold">Advertise</h1>
           <p className="pt-4 text-2xl font-semibold font-light">
             GetIntoPC Audience

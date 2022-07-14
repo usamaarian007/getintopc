@@ -13,7 +13,7 @@ export default function About() {
         className="ml-20 mr-24 mt-4 flex flex-wrap"
         style={{ height: "auto", width: "90vw", backgroundColor: "#FFFFFF" }}
       >
-        <div className="p-4" style={{ width: "60vw" }}>
+        <div className="p-4" style={{ width: "64vw" }}>
           <h1 className="text-4xl font-semibold">About</h1>
           <p className="pt-4 text-sm font-light">
             GetintoPC is aimed to provide those software which users want to
@@ -30,8 +30,8 @@ export default function About() {
         <div>
           <Sidebar></Sidebar>
         </div>
-        <div style={{width: '100vw'}}>
-        <BBar></BBar>
+        <div style={{ width: "100vw" }}>
+          <BBar></BBar>
         </div>
       </div>
     </>

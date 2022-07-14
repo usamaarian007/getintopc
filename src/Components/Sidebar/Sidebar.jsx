@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import lock from "../../../src/lock.webp";
 import support from "../../../src/support.webp";
 import twitter from "../../../src/twitter.webp";
 import subscribe from "../../../src/subscribe.webp";
 import subscribe2 from "../../../src/subscribe2.webp";
-import submit from "../../../src/submit.webp"
+import submit from "../../../src/submit.webp";
 
 export default function Sidebar() {
   return (
     <>
-       
+      
         <div class="pt-6 flex justify-center">
           <div class="mb-3  xl:w-68">
             <div class="input-group relative flex w-full mb-4">
