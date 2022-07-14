@@ -11,7 +11,7 @@ export default function Sidebar() {
     <>
        
         <div class="pt-6 flex justify-center">
-          <div class="mb-3 xl:w-68">
+          <div class="mb-3  xl:w-68">
             <div class="input-group relative flex w-full mb-4">
               <input
                 type="search"
@@ -54,7 +54,7 @@ export default function Sidebar() {
           <img src={subscribe} />
         </div>
         <div
-          className=" h-8 mt-4 font-bold text-zinc-100 pt-1 pl-2 pb-3 m-5 "
+          className=" h-8 mt-4 font-bold text-zinc-100 pt-1 pl-2 pb-3 m-1 "
           style={{ width: "auto", backgroundColor: "#ACC21F" }}
         >
           NEVER MISS COOL SOFTWARE
