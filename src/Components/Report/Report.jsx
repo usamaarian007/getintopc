@@ -12,7 +12,7 @@ export default function Report() {
       <Navbar></Navbar>
       <div
         className="ml-20 mr-24 mt-4 flex flex-wrap"
-        style={{ height: "auto", width: "auto", backgroundColor: "#FFFFFF" }}
+        style={{ height: "auto", width: "90vw", backgroundColor: "#FFFFFF" }}
       >
         <div className="p-4" style={{ width: "60vw" }}>
           <h1 className="text-4xl font-semibold">Report & Abuse</h1>
@@ -36,9 +36,7 @@ export default function Report() {
             If you want to report a broken link then either comment below or
             send an email on below address.
           </p>
-          <p
-            className="text-xl font-semibold py-6 flex-wrap text-center " 
-          >
+          <p className="text-xl font-semibold py-6 flex-wrap text-center ">
             report@getintopc.com
           </p>
         </div>

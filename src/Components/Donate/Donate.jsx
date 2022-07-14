@@ -12,7 +12,7 @@ export default function Donate() {
       <Navbar></Navbar>
       <div
         className="ml-20 mr-24 mt-4 flex flex-wrap"
-        style={{ height: "auto", width: "auto", backgroundColor: "#FFFFFF" }}
+        style={{ height: "auto", width: "90vw", backgroundColor: "#FFFFFF" }}
       >
         <div className="p-4" style={{ width: "60vw" }}>
           <h1 className="text-4xl font-semibold">Donate</h1>

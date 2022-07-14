@@ -15,7 +15,8 @@ function App() {
     const myStyle={
         backgroundImage: `url(${background})` ,
         height:'auto',
-        marginTop:'-50px', 
+        marginTop:'-50px',  
+        width: 'fit-content', 
         paddingBottom: '20px',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
