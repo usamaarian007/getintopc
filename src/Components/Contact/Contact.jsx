@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../header";
 import Navbar from "../Navbar";
 import BBar from "../bottomBar";
-
+import { incNumber } from "../../actions/index";
+import { decNumber } from "../../actions/index";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Contact() {
+  const changeTheNumber = useSelector((state) => state.changeTheNumber);
+
+  const dispatch = useDispatch();
+
   return (
     <>
       <Header></Header>
@@ -27,11 +33,41 @@ export default function Contact() {
             You can also comment below if you want to say something publicly.
           </p>
         </div>
+         
         <div>
           <Sidebar></Sidebar>
         </div>
         <div style={{ width: "100vw" }}>
           <BBar></BBar>
+        </div>
+      </div>
+      <div className="main-div">
+        <div class="container">
+          <h1>Increment/Decrement counter</h1>
+          <h4>using React and Redux</h4>
+
+          <div class="quantity">
+            <a
+              class="quantity__minus"
+              title="Decrement"
+              onClick={() => dispatch(decNumber())}
+            >
+              <span>-</span>
+            </a>
+            <input
+              name="quantity"
+              type="text"
+              class="quantity__input"
+              value={changeTheNumber}
+            />
+            <a
+              class="quantity__plus"
+              title="Increment"
+              onClick={() => dispatch(incNumber(1))}
+            >
+              <span>+</span>
+            </a>
+          </div>
         </div>
       </div>
     </>
