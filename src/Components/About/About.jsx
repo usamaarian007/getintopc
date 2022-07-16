@@ -5,6 +5,17 @@ import Navbar from '../Navbar';
 import BBar from '../bottomBar';
 
 export default function About() {
+   const data = [
+    {
+     "p1": "GetintoPC is aimed to provide those software which users want to have. The main goal is to provide direct downloading link without any wait so that users can enjoy unlimited downloads.",
+
+      "p2": "You can request us about software,game,application etc and we’ll upload it here as soon as we can.",
+
+      "p3": "Cheers,",
+
+      "p4": "GetintoPC Team"
+    },
+    ];
   return (
     <>
       <Header></Header>
@@ -15,17 +26,20 @@ export default function About() {
       >
         <div className="p-4" style={{ width: "64vw" }}>
           <h1 className="text-4xl font-semibold">About</h1>
-          <p className="pt-4 text-sm font-light">
-            GetintoPC is aimed to provide those software which users want to
-            have. The main goal is to provide direct downloading link without
-            any wait so that users can enjoy unlimited downloads.
-          </p>
-          <p className="pt-3 text-sm font-light">
-            You can request us about software,game,application etc and we’ll
-            upload it here as soon as we can.
-          </p>
-          <p className="pt-3 text-sm font-light">Cheers,</p>
-          <p className="pt-3 text-sm font-light">GetintoPC Team</p>
+          {data?.map((item, index) => {
+            return (
+              <div>
+                <p className="pt-4 text-sm font-light">
+                  {item.p1}
+                </p>
+                <p className="pt-3 text-sm font-light">
+                {item.p2}
+                </p>
+                <p className="pt-3 text-sm font-light">{item.p3} </p>
+                <p className="pt-3 text-sm font-light"> {item.p4}</p>
+              </div>
+            );
+          })}
         </div>
         <div>
           <Sidebar></Sidebar>

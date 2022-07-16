@@ -3,7 +3,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import Header from "../header";
 import Navbar from "../Navbar";
 import BBar from "../bottomBar";
-import dummyData from "../dummyData";
+import dummyDataMission from "../dummyData";
 
 export default function Mission() {
   {
@@ -19,37 +19,23 @@ export default function Mission() {
             backgroundColor: "#FFFFFF",
           }}
         >
-          {dummyData?.mission?.map(({missi}) => {
-            console.log(dummyData, "hhh");
+          {dummyDataMission?.map((item, index) => {
+            console.log(item, "hhh");
             return (
-              <div className="p-4" style={{ width: "64vw" }}>
-                <h1 className="text-4xl font-semibold">{missi.p1}</h1>
-                <p className="pt-4 text-sm font-light"> 
-                </p>
-                <p className="pt-3 text-sm font-light">
-                   
-                </p>
-                <p className="pt-3 text-sm font-light">
-                   
-                </p>
-                <p className="pt-3 text-sm font-light">
-                  
-                </p>
-                <p className="pt-3 text-sm font-light">
-                  
-                </p>
-                <p className="pt-3 text-sm font-light">
-                   
-                </p>
-                <p className="pt-8 text-sm font-light">
-                   
-                </p>
-                <p
-                  className="pt-5 text-xl font-bold text-red-600
-"
-                >
-                   
-                </p>
+              <div key={index}>
+                <div className="p-4" style={{ width: "64vw" }}>
+                  <h1 className="text-4xl font-semibold">Mission</h1>
+                  <p className="pt-4 text-sm font-light">{item.p1}</p>
+                  <p className="pt-3 text-sm font-light">{item.p2}</p>
+                  <p className="pt-3 text-sm font-light">{item.p3}</p>
+                  <p className="pt-3 text-sm font-light">{item.p4}</p>
+                  <p className="pt-3 text-sm font-light">{item.p5}</p>
+                  <p className="pt-3 text-sm font-light">{item.p6}</p>
+                  <p className="pt-8 text-sm font-light">{item.p7}</p>
+                  <p className="pt-5 text-xl font-bold text-red-600">
+                    {item.p8}
+                  </p>
+                </div>
               </div>
             );
           })}

@@ -8,6 +8,7 @@
  import Dmca from './Components/DMCA/dmca';
  import Advertise from './Components/Advertise/Advertise';
  import Donate from './Components/Donate/Donate';
+ import Categories from './Components/Categories/Categories';
 import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter } from "react-router-dom";  
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
             </Routes>
             <Routes>
               <Route exact path="/Donate" element={<Donate />} />
+            </Routes>
+            <Routes>
+              <Route exact path="/Categories" element={<Categories />} />
             </Routes>
           </BrowserRouter>
         </div>

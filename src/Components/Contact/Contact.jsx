@@ -11,6 +11,13 @@ export default function Contact() {
   const changeTheNumber = useSelector((state) => state.changeTheNumber);
 
   const dispatch = useDispatch();
+  const data = [
+    {
+      p1: " We welcome your feedback and suggestions. Please Send an email on below address.",
+      p2: "contact@getintopc.com",
+      p3: " You can also comment below if you want to say something publicly.",
+    },
+  ];
 
   return (
     <>
@@ -22,16 +29,17 @@ export default function Contact() {
       >
         <div className="p-4" style={{ width: "64vw" }}>
           <h1 className="text-4xl font-semibold">Contact Us</h1>
-          <p className="pt-4 text-sm font-light">
-            We welcome your feedback and suggestions. Please Send an email on
-            below address.
-          </p>
-          <p className="text-xl font-semibold py-6 flex-wrap text-center ">
-            contact@getintopc.com
-          </p>
-          <p className="pt-3 text-sm font-light">
-            You can also comment below if you want to say something publicly.
-          </p>
+          {data?.map((item, index) => {
+             return (
+               <div>
+                 <p className="pt-4 text-sm font-light">{item.p1}</p>
+                 <p className="text-xl font-semibold py-6 flex-wrap text-center ">
+                   {item.p2}
+                 </p>
+                 <p className="pt-3 text-sm font-light">{item.p3}</p>
+               </div>
+             );
+          })}
         </div>
          
         <div>
